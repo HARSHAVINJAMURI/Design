@@ -1,0 +1,223 @@
+*{ 
+    margin:0; 
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+ }
+ html{
+    scroll-behavior: smooth;
+}
+ body{
+    background:#000000 !important;
+    color: #fff !important;;
+}
+.navbar-nav .nav-link:hover {
+    font-size: 1.2em; 
+    transition: font-size 0.3s;
+}
+.navbar {
+   position: fixed !important;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+   transition: background-color 0.3s ease;
+}
+.navbar:hover {
+   background-color:rgb(179, 120, 47) !important;
+   text-decoration: #184870;
+}
+.carousel-item img {
+   max-height: 300px;
+   width: 100%;
+   object-fit: cover;
+}
+.container{
+   margin-bottom: 50px;
+   margin-top: 40px;
+}
+ /*---------About Section----------*/
+ #about{
+    padding:80px 0;
+    color:#ffffff;
+    margin-top:50px;
+ }
+ .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+ }
+ .about-col-1{
+    flex-basis: 35%;
+ }
+ .about-col-1 img{
+    width:600px;
+    height:400px;
+    border-radius:5px;
+ }
+.about-col-2{
+    flex-basis:50%;
+    text-align: justify;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+    font-family: "Protest Revolution", sans-serif;
+    margin-bottom: 50px;
+}
+.sub-title:hover{
+      color:#184870;
+   
+}
+.title{
+   color: rgb(255, 255, 255);
+   margin-top: 50px;
+   text-align: center;
+   font-size: 70px !important;
+   font-family: "Luckiest Guy", cursive;
+   font-weight: 400;
+   font-style: normal;
+}
+.sub-title1{
+   color: #ff0000;
+   margin-top: -30px;
+   text-align: center;
+   font-family: "Merriweather", serif;
+   font-weight: 300;
+   font-style: normal;
+}
+/*---------Services Section----------*/
+#services{
+    padding:30px 0;
+    margin: bottom 80px;
+}
+.service-list{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      margin-top: 50px;
+}
+.service-list div{
+      background: #ada7a7;
+      padding: 40px;
+      font-size: 20px;
+      font-weight: 300;
+      border-radius: 10px;
+      color: #000000;
+      transition: background 0.5s,transform 0.5s;
+}
+.service-list div i{
+   font-size: 50px;
+   margin-bottom: 30px;
+   color: #000000 !important;
+}
+.service-list div h2{
+   font-size: 30px;
+   margin-bottom: 15px;
+   color: #000000 !important;
+   font-weight: 800;
+}
+.service-list div a{
+   color: #000000 ;
+   text-decoration: none;
+   font-size: 18px;
+   margin-top: 20px;
+   display: inline-block;
+}
+.service-list div a:hover{
+   color: #ffffff;
+   font-weight: 700;
+}
+.service-list div:hover{
+   background:rgb(36, 167, 64);
+   transform: translateY(-10px);
+}
+
+.btn{
+   display: block;
+   margin:50px auto;
+   width:fit-content;
+   border:1px solid#184870;
+   padding: 14px 50px;
+   border-radius: 6px;
+   text-decoration: none;
+   color:#fff !important;
+   transition: background 0.5s;
+}
+.btn:hover{
+   background:#184870;
+   border: #60ae6c;
+   border-radius: 10px;
+}
+
+marquee {
+   font-size: 20px;
+   color: #000000;
+   background-color: #037081;
+}
+/*---------Contact Section----------*/
+.contact-left{
+   flex-basis:35%;
+}
+.contact-right{
+   flex-basis:60%;
+}
+.contact-left p {
+   margin-top:30px;
+}
+.contact-left p i{
+   color:#c5592b;
+   margin-right: 15px;
+   font-size:25px;
+}
+.social-icons{
+   margin-top: 30px;
+}
+.social-icons a{
+   margin-right: 15px;
+   color:#ababab;
+   font-size: 50px;
+   text-decoration:none;
+   display:inline-block;
+   transition: transform 0.5s;
+}
+.social-icons a:hover{
+   color:#0080ff;
+   transform: translateY(-15px);
+}
+.btn.btn2{
+   display:inline-block;
+   background:#046abd;
+}
+.contact-right form{
+   width:100%;
+}
+form input, form textarea{
+   width:100%;
+   padding: 15px;
+   border:0;
+   outline: none;
+   background: #262626;
+   color:#fff;
+   margin: 15px 0;
+   font-size: 18px;
+   border-radius: 6px;
+}
+form .btn2{
+   padding:14px 60px;
+   margin-top: 20px;
+   font-size: 18px;
+   cursor:pointer;
+}
+.copyright{
+   text-align:center;
+   padding: 5px 5px;
+   background: #262626;
+   width:100%;
+   margin-top: 20px;
+   font-weight: 300;
+}
+.copyright i{
+   color:#ff004f;
+}

@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.carousel-item img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.service-box {
+    background-color: #e9ecef;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.service-box:hover {
+    background-color: rgb(115, 164, 214);
+    transform: scale(1.05);
+}
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+}

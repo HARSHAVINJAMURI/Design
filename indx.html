@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Your Web Page</title>
+</head>
+<body>
+    <!-- Menu Section -->
+    <nav class="navbar navbar-expand-lg" style="background-color:bisque;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Image Section -->
+    <div class="container mt-4">
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://veritascare.co.uk/wp-content/uploads/2022/04/food.png" class="img-fluid" alt="...">                
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/education/hero/top-ten-foods-for-health-2x.jpg" class="img-fluid" alt="..."> 
+                </div>
+                <div class="carousel-item">
+                    <img src="https://as2.ftcdn.net/v2/jpg/01/40/68/37/1000_F_140683759_aIKqp038nvmlLbuRvegkwKWf092iFbwf.jpg" class="d-block w-100" alt="..." >
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h3>Service 1</h3>
+                    <p>Service details...</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h3>Service 2</h3>
+                    <p>Service details...</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h3>Service 3</h3>
+                    <p>Service details...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contact Us</h2>
+                <!-- Contact form goes here -->
+            </div>
+            <div class="col-md-6">
+                <h2>Location</h2>
+                <!-- Map or address details go here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="mt-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Your Company</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Web Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            display: inline-block;
+            transition: font-size 0.3s ease-in-out;
+        }
+
+        header a:hover {
+            font-size: 18px;
+        }
+
+        .image-section {
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .service-section {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .service-item {
+            display: inline-block;
+            margin: 0 20px;
+            padding: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .service-item:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </header>
+
+    <div class="image-section">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Image 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="service-section">
+        <h2>Our Services</h2>
+        <div class="service-item">Service 1</div>
+        <div class="service-item">Service 2</div>
+        <div class="service-item">Service 3</div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: example@example.com</p>
+        <p>Phone: +1 234 567 890</p>
+    </div>
+
+    <footer>
+        &copy; 2024 Your Company
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/7e07a3bf71.js" crossorigin="anonymous"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Diet Recommendation</title>
+    <link rel="icon" href="pageIcon.png">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .r {
+            max-width: 100%;
+            height:400px;
+            border-radius: 800px;
+        }
+        .f{
+            font-family:'Dancing Script';
+        }
+        .about{
+            background-color: #98b7bc;
+        }
+        .recommendation{
+            background-color: #3e5b69;
+        }
+        p{
+            color: rgb(0, 0, 0);
+            font-size: large;
+            font-weight: 75px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 30px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+        h1, h2, h3{
+            color: rgb(11, 93, 164);
+            align-self: center;
+            text-shadow: 2px 2px 5px rgb(29, 129, 152);
+            padding-top: 0px;
+            padding-right: 20px;
+            padding-bottom: 0;
+            padding-left: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+        }
+        h1:nth-child(1){
+            margin-top:50px;
+        }
+        #h20{
+            margin-top:50px;
+        }
+        li{
+            float:left;
+        }
+        li a{
+            display:block;
+            color: rgb(16, 130, 218);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .active{
+            background-color: rgb(0, 0, 0);
+            color: rgb(252, 250, 250);
+        }
+        li a:hover{
+            background-color: rgb(9, 98, 194);
+            color: rgb(0, 0, 0);
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #daa2a2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #387575;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #15a2a2;
+        }
+        .social-icons a{
+            padding: 10px;
+            color:#fc0808;
+            font-size: 30px;
+            display:inline-block;
+            transition: transform 0.5s;
+        }
+        .social-icons a:hover{
+            color:#0089fa;
+            transform: translateY(-5px);
+        }
+        .contact-details {
+            background: #393f45; 
+            padding: 15px;
+            color: #fff; 
+            border-radius: 10px;
+        }
+        .contact-details h3 {
+            color: #00aaff; 
+            text-shadow:2px 2px 5px #bd1a1a;
+        }
+
+        footer {
+            background: #494d51;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+        }
+        /* .iframe-container {
+            max-width: 40%;
+            padding: 20px;
+        }
+        .iframe-container iframe {
+            max-width: 100%;
+            max-height: 100%;
+        } */
+        marquee{
+            font-size: 20px;
+            color: #000000;
+            background-color: #037081;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <b><li><a class="active" href="#home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#recommendation">Recommendation</a></li>
+        <li><a href="#contact">Contact</a></li></b>
+    </ul>
+    <div id="home">
+        <h1>NUTRITION DIET RECOMMENDATION</h1>
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://as2.ftcdn.net/v2/jpg/01/40/68/37/1000_F_140683759_aIKqp038nvmlLbuRvegkwKWf092iFbwf.jpg" class="d-block w-100" alt="..." width="300" height="660">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://d2jx2rerrg6sh3.cloudfront.net/images/news/ImageForNews_755585_1691398126639527.jpg" class="d-block w-100" alt="..."width="300" height="660" >
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-be3500.jpg" class="d-block w-100" alt="..." width="300" height="660">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://as2.ftcdn.net/v2/jpg/01/11/77/47/1000_F_111774771_clVgZm3rv5ejG7h68lz5SOrj511epPJH.jpg" class="d-block w-100" alt="..."width="300" height="660" >
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2021_06/1671968/dried-beans-mc-main1-210209.jpg" class="d-block w-100" alt="..." width="300" height="660">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://as1.ftcdn.net/v2/jpg/06/26/25/82/1000_F_626258234_hMpNnvvoi1VkICMEoWBO4Sf14AlQkMei.jpg" class="d-block w-100" alt="..." width="300" height="660">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://nutrientrescue.com/cdn/shop/articles/NutrientRescue_is-the-food-pyramid-relevant_1400x.jpg?v=1662697442" class="d-block w-100" alt="..." width="300" height="660" >
+                </div>
+                <div class="carousel-item">
+                    <img src="https://as2.ftcdn.net/v2/jpg/06/28/82/57/1000_F_628825750_rYEJmEK3DG1j7XnbmMdYCeZLaxb8NbBr.jpg" class="d-block w-100" alt="..."width="300" height="660" >
+                </div>
+                <div class="carousel-item">
+                    <img src="https://as1.ftcdn.net/v2/jpg/02/25/33/56/1000_F_225335692_L8Vv8Q81fWCsTN9JWCbYoXb4SsqVPatb.jpg" class="d-block w-100" alt="..."width="300" height="660" >
+                </div>
+                <div class="carousel-item">
+                    <img src="https://as1.ftcdn.net/v2/jpg/06/42/95/88/1000_F_642958848_PWiu2fYUqFPQo2AQ07ulHqZTakWCEDxm.jpg" class="d-block w-100" alt="..."width="300" height="660">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="about">
+    <div id="About">
+        <br><br><br>
+        <h1>Nutrition Diet</h1>
+        <p>A Healthy Diet helps to protect against malnutrition in all its forms, as well as noncommunicable diseases (NCDs), including diabetes, heart disease, stroke and cancer.
+        Unhealthy diet and lack of physical activity are leading global risks to health.
+        Healthy dietary practices start early in life – breastfeeding fosters healthy growth and improves cognitive development, and may have longer term health benefits such as reducing the risk of becoming overweight or obese and developing NCDs later in life.
+        <b>With food fortification or enrichment, we can regain the nutrients lost during food processing or storage. Fortified foods contain micronutrients, such as vitamins, minerals, and essential nutrients.
+             They are crucial for enzymes, hormones, and various substances production, which participate in growth and development.</b></p>
+        <div class="container">
+            <img class='r' src="https://as1.ftcdn.net/v2/jpg/04/07/50/60/1000_F_407506028_Vu02aBDvTcJRBaQrSGMWuxrhauj0denz.jpg" width="500px" height="500px"/>
+            <div class="content">
+                <p class="f">A well-structured diet plan plays a pivotal role in promoting overall health and well-being. It ensures the intake of essential nutrients like vitamins, minerals, proteins, and carbohydrates, contributing to the proper functioning of the body. A balanced diet supports weight management, providing the necessary energy for daily activities while preventing fatigue. Moreover, it helps prevent chronic diseases such as heart disease and diabetes by promoting heart health, regulating blood sugar levels, and reducing the risk factors associated with these conditions. Additionally, a nutrient-rich diet supports digestive health, bone strength, and muscle development. It can positively impact mental well-being, enhancing mood and cognitive function, making it an essential component of a holistic approach to a healthy lifestyle.
+
+                    Furthermore, a personalized diet plan addresses individual needs, considering factors like age, gender, activity level, and existing health conditions. Whether the goal is weight loss, muscle gain, or simply maintaining good health, a well-tailored diet plan provides the foundation for sustained energy, vitality, and disease prevention. Consulting with a healthcare professional or a registered dietitian can help individuals create a plan that aligns with their specific health goals and lifestyle, ensuring optimal nutrition and long-term well-being.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="recommendation">
+        <div id="recommendation">
+            <br><br><br>
+            <h2 id="h2o" align="center"><span style="color: rgb(0, 225, 255);text-shadow: 2px 2px 5px #ff0000;">Enter Your Details</span></h2>
+            <form action="/process_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                <label for="age">Age:</label>
+                <select name="age" required>
+                    <option value="None">Select one</option>
+                    <option value="5-12">5-12</option>
+                    <option value="13-19">13-19</option>
+                    <option value="20-35">20-35</option>
+                    <option value="36-50">36-50</option>
+                    <option value="50-100">50-100</option>
+                </select>
+                <label for="gender">Gender:</label>
+                <select name="gender" required>
+                    <option value="None">Select one</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Transgender">Transgender</option>
+                </select>
+                <label for="health_issues">Health Issues:</label>
+                <select name="health_issues" required>
+                    <option value="None">Select one</option>
+                    <option value="AIDS">AIDS</option>
+                    <option value="Urinary Tract Infection">Urinary Tract Infection</option>
+                    <option value="Paralysis">Paralysis</option>
+                    <option value="Dengue">Dengue</option>
+                    <option value="Tuberculosis">Tuberculosis</option>
+                    <option value="Fungal_Infection">Fungal_Infection</option>
+                    <option value="Asthma">Asthma</option>
+                    <option value="Diabetes">Diabetes</option>
+                    <option value="Thyroid">Thyroid</option>
+                    <option value="Cholesterol">Cholesterol</option>
+                    <option value="Bone_Sarcomas">Bone_Sarcomas</option>
+                    <option value="Plague">Plague</option>
+                    <option value="Monkey Pox">Monkey Pox</option>
+                    <option value="Malaria">Malaria</option>
+                    <option value="Chickenpox">Chickenpox</option>
+                    <option value="Chikungunya">Chikungunya</option>
+                    <option value="Pneumonia">Pneumonia</option>
+                    <option value="Jaundice">Jaundice</option>
+                    <option value="Cardiovascular Disease">Cardiovascular Disease(CVDs)</option>
+                    <option value="Gastroenteritis">Gastroenteritis</option>
+                    <option value="Migraine">Migraine</option>
+                    <option value="Hypertension">Hypertension</option>
+                    <option value="Hypoglycemia">Hypoglycemia</option>
+                    <option value="Heart Attack">Heart Attack</option>
+                    <option value="Varicose Veins">Varicose Veins</option>
+                    <option value="Osteoarthritis">Osteoarthritis</option>
+                    <option value="Skin Cancer">Skin Cancer</option>
+                    <option value="Lung Cancer">Lung Cancer</option>
+                    <option value="Breast Cancer">Breast Cancer</option>
+                    <option value="Liver Cancer">Liver Cancer</option>
+                </select>
+                <input type="submit" value="Submit" onclick="submitForm()">
+            </form><br><br><br>
+        </div>
+        <div id=contact>
+            <div class="contact-details">
+                <h3>CONTACT DETAILS</h3>
+                <p><i class="fas fa-paper-plane"><link rel="mail" href="mailto:info@example.com">123@gmail.com</link></i></p>
+                <p><i class="fas fa-phone-square-alt"> 0123456789</i></p>
+                <p><b><u>Address</u>:</b> 123 Nutrition Street, Cityville</p><br>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/VHarsha_3?t=PEexGGQaD_qtDom8qRFp8Q&s=08"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/darling__003/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/harsha-vinjamuri-062a24232"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <marquee direction="LEFT"height="30" bgcolor="yellow" scrollamount="10"><b>Enriched Nutrition Diet Recommendation</b></marquee><br>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <footer>
+           Copyright &copy;  <b>Team</b>.
+        </footer>
+</body>
+</html> -->
