@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <script src="https://kit.fontawesome.com/7e07a3bf71.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Light&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Fjalla+One&family=Holtwood+One+SC&family=Luckiest+Guy&family=Niconne&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+        *{ 
+    margin:0; 
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+ }
+ html{
+    scroll-behavior: smooth;
+}
+ body{
+    background:#000000 !important;
+    color: #fff !important;;
+}
+.navbar-nav .nav-link:hover {
+    font-size: 1.2em; 
+    transition: font-size 0.3s;
+}
+.navbar {
+   position: fixed !important;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+   transition: background-color 0.3s ease;
+}
+.navbar:hover {
+   background-color:rgb(179, 120, 47) !important;
+   text-decoration: #184870;
+}
+#home {
+   padding-top: 20px;
+}
+.carousel-item img {
+   height: 500px; /* Set the desired fixed height */
+   width: 100%;
+   object-fit: cover;
+}
+.container{
+   margin-bottom: 50px;
+   margin-top: 40px;
+}
+ /*---------About Section----------*/
+ #about{
+    padding:80px 0;
+    color:#ffffff;
+    margin-top:50px;
+ }
+ .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+ }
+ .about-col-1{
+    flex-basis: 35%;
+ }
+ .about-col-1 img{
+    width:600px;
+    height:400px;
+    border-radius:5px;
+ }
+.about-col-2{
+    flex-basis:50%;
+    text-align: justify;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+    font-family: "Protest Revolution", sans-serif;
+    margin-bottom: 50px;
+}
+.sub-title:hover{
+      color:#184870;
+   
+}
+.title{
+   color: rgb(255, 255, 255);
+   margin-top: 50px;
+   text-align: center;
+   font-size: 70px !important;
+   font-family: "Luckiest Guy", cursive;
+   font-weight: 400;
+   font-style: normal;
+}
+.sub-title1{
+   color: #ff0000;
+   margin-top: -30px;
+   text-align: center;
+   font-family: "Merriweather", serif;
+   font-weight: 300;
+   font-style: normal;
+}
+/*---------Services Section----------*/
+#services{
+    padding:30px 0;
+    margin: bottom 80px;
+}
+.service-list{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      margin-top: 50px;
+}
+.service-list div{
+      background: #ada7a7;
+      padding: 40px;
+      font-size: 20px;
+      font-weight: 300;
+      border-radius: 10px;
+      color: #000000;
+      transition: background 0.5s,transform 0.5s;
+}
+.service-list div i{
+   font-size: 50px;
+   margin-bottom: 30px;
+   color: #000000 !important;
+}
+.service-list div h2{
+   font-size: 30px;
+   margin-bottom: 15px;
+   color: #000000 !important;
+   font-weight: 800;
+}
+.service-list div a{
+   color: #000000 ;
+   text-decoration: none;
+   font-size: 18px;
+   margin-top: 20px;
+   display: inline-block;
+}
+.service-list div a:hover{
+   color: #ffffff;
+   font-weight: 700;
+}
+.service-list div:hover{
+   background:rgb(36, 167, 64);
+   transform: translateY(-10px);
+}
+
+.btn{
+   display: block;
+   margin:50px auto;
+   width:fit-content;
+   border:1px solid#184870;
+   padding: 14px 50px;
+   border-radius: 6px;
+   text-decoration: none;
+   color:#fff !important;
+   transition: background 0.5s;
+}
+.btn:hover{
+   background:#184870;
+   border: #60ae6c;
+   border-radius: 10px;
+}
+
+marquee {
+   font-size: 20px;
+   color: #000000;
+   background-color: #037081;
+}
+/*---------Contact Section----------*/
+.contact-left{
+   flex-basis:35%;
+}
+.contact-right{
+   flex-basis:60%;
+}
+.contact-left p {
+   margin-top:30px;
+}
+.contact-left p i{
+   color:#c5592b;
+   margin-right: 15px;
+   font-size:25px;
+}
+.social-icons{
+   margin-top: 30px;
+}
+.social-icons a{
+   margin-right: 15px;
+   color:#ababab;
+   font-size: 50px;
+   text-decoration:none;
+   display:inline-block;
+   transition: transform 0.5s;
+}
+.social-icons a:hover{
+   color:#0080ff;
+   transform: translateY(-15px);
+}
+.btn.btn2{
+   display:inline-block;
+   background:#046abd;
+}
+.contact-right form{
+   width:100%;
+}
+form input, form textarea{
+   width:100%;
+   padding: 15px;
+   border:0;
+   outline: none;
+   background: #262626;
+   color:#fff;
+   margin: 15px 0;
+   font-size: 18px;
+   border-radius: 6px;
+}
+form .btn2{
+   padding:14px 60px;
+   margin-top: 20px;
+   font-size: 18px;
+   cursor:pointer;
+}
+.copyright{
+   text-align:center;
+   padding: 5px 5px;
+   background: #262626;
+   width:100%;
+   margin-top: 20px;
+   font-weight: 300;
+}
+.copyright i{
+   color:#ff004f;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services"><b>Services</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact"><b>Contact</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+    <h1 class="title">NUTRITION DIET</h1>
+    <h1 class="sub-title1">RECOMMENDATION</h1>
+    <!-------------------Image Section ------------------------------------>
+    <div class="container mt-4">
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media.istockphoto.com/id/1203599923/photo/food-background-with-assortment-of-fresh-organic-vegetables.jpg?s=612x612&w=0&k=20&c=DZy1JMfUBkllwiq1Fm_LXtxA4DMDnExuF40jD8u9Z0Q=">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/25/875/633/natural-foods-fruit-food-fruits-wallpaper-preview.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://thedaily9.in/wp-content/uploads/2023/01/south-indian-diet.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://thedaily9.in/wp-content/uploads/2023/01/south-indian-diet.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/free-photo/top-view-raw-lentils-with-nuts-eggs-pasta-seasonings-dark-background-fruit-walnut-meal-photo-cake-food-pastry-color-sweet_140725-160758.jpg?w=1060&t=st=1708674198~exp=1708674798~hmac=79e950747f14bf7c1f4bd91ca43f80409f461729fe8eab18df757d76b1d3721b">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://thedaily9.in/wp-content/uploads/2023/01/south-indian-diet.jpg">
+                </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    </div>
+    <!----------------About Section---------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <h1 class="sub-title">ABOUT US</h1><br>
+                <div class="about-col-1">
+                    <img src="https://changinghabits.com.au/wp-content/uploads/2019/12/22-myths.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <p><br>Eating healthy food throughout your life helps prevent sickness and keeps your body strong.
+                        But nowadays, more people are eating a lot of processed food, living in cities, and changing how
+                        they live. This means they're eating more foods that are high in fat, sugar, and salt, and not
+                        enough fruits, veggies, and whole grains.
+                        What makes a healthy diet can change from person to person, depending on things like age,
+                        gender, and how active they are. It also depends on where you live and what kind of food is
+                        available there. But the basic idea of a healthy diet is always the same.</p>
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------Services Section---------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">OUR SERVICES</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <h2>Diet Plan</h2>
+                    <p style="text-align: justify;">Build websites for users based on their requirements. Creating more intresting and professional
+                        webpages using Full stack.</p>
+                    <a href="/index1">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-nutritionix"></i>
+                    <h2>BMI Calculator</h2>
+                    <p style="text-align: justify;"> Body Mass Index, or BMI, is a weight and height based indicator of body fat. It offers a quick and easy method for determining if a person's body weight is appropriate for their height.</p>
+                    <a href="/index2">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-registered"></i>
+                    <h2>Recommendation</h2>
+                    <p style="text-align: justify;">Creates Web apps based on user requirements. Builds new featured web applications</p>
+                    <a href="/index3">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <!----------------Contact Section---------------------------------->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">CONTACT US</h1>
+                    <p><i class="fa-solid fa-envelope"> 123@gmail.com </i></p>
+                    <p><i class="fas fa-phone-square-alt"> 0123456789 </i></p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/VHarsha_3?t=PEexGGQaD_qtDom8qRFp8Q&s=08"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/darling__003/"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <marquee scrollamount="20">Wishing you with proper health and prosperity.&nbsp; &nbsp; &nbsp; Keep it in touch </marquee>
+        <div class="copyright">
+            <p>copyright © Recommendation Team Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxxn_XmEASo0oGigFA0dt-9LVmMqm41M2nUX8DxXW8UAVE8-Fc9ebhbX8F8Jw-MCUdV/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 1000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get all anchor tags inside the navbar
+            var links = document.querySelectorAll("#navbar .nav-link");
+    
+            // Add click event listeners to all anchor tags
+            links.forEach(function(link) {
+                link.addEventListener("click", function() {
+                    // Check if the navbar is collapsed
+                    if (document.querySelector("#navbarNav").classList.contains("show")) {
+                        // Collapse the navbar
+                        var navbarCollapse = new bootstrap.Collapse(document.querySelector("#navbarNav"));
+                        navbarCollapse.toggle();
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

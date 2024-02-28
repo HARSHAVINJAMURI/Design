@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Result Page</title>
+    <style>
+        @font-face {
+            font-family:myFont;
+            src: url(Later.ttf);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: #214364;
+            font-family: 'Arial', sans-serif;
+            color: #fafbfc;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .h{
+            font-family:myFont;
+            background-color:black ;
+            text-shadow:
+                0 0 10px rgb(255, 0, 0),
+                0 0 20px rgb(255, 0, 0), 
+                0 0 30px rgb(255, 0, 0),
+                0 0 40px rgb(255,0, 0);
+            transition: transform 0.3s ease, text-shadow 0.7s ease;
+        }
+        .h:hover{
+            transform: translateY(-5px); 
+            text-shadow:
+                0 0 15px rgb(0, 47, 255),
+                0 0 25px rgb(0, 42, 255),
+                0 0 35px rgb(43, 0, 255),
+                0 0 45px rgb(0, 38, 255),
+                0 0 55px rgb(0, 38, 255)
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #fff; 
+        }
+
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .q{
+            font-size: 20px;
+            font-weight: bolder;
+            color: #000000;
+            background-color: #037081;
+        }
+        .qq{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        th {
+            background-color: #92C7CF;
+            color: #000000;
+        }
+        tr{
+            background-color: #1e2c3d;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+            background: #343a40; 
+            padding: 15px;
+            color: #fff; 
+            border-radius: 10px;
+
+        }
+        .contact-details h3 {
+            color: #007bff; 
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #494d51;
+            color: #fff; 
+            padding: 8px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h"><b>RESULT PAGE</b></h1>
+    <h1 class="h1"><b><u> PERSONAL INFORMATION </span></u></b></h1>
+    <table>
+        <tr>
+            <th class="qq">Attribute</th>
+            <th class="qq">Value</th>
+        </tr>
+        <tr>
+            <td class="q">Name</td>
+            <td>{{ name }}</td>
+        </tr>
+        <tr>
+            <td class="q">Email</td>
+            <td>{{ email }}</td>
+        </tr>
+        <tr>
+            <td class="q">Age</td>
+            <td>{{ age }}</td>
+        </tr>
+        <tr>
+            <td class="q">Gender</td>
+            <td>{{ gender }}</td>
+        </tr>
+        <tr>
+            <td class="q">Health Issues</td>
+            <td>{{ health_issues | join(', ') }}</td>
+        </tr>
+    </table>
+
+    <h2><b><u>DIET PLANS</u></b></h2>
+    <table>
+        <tr>
+            <th class="qq">Time of Day</th>
+            <th class="qq">Diet Plan</th>
+        </tr>
+        <tr>
+            <td class="q">Morning (veg)</td>
+            <td>{{ Diet_Morning_Veg }}</td>
+        </tr>
+        <tr>
+            <td class="q">Morning (Non-Veg)</td>
+            <td>{{ Diet_Morning_NonVeg }}</td>
+        </tr>
+        <tr>
+            <td class="q">Afternoon (veg)</td>
+            <td>{{ Diet_Afternoon_Veg }}</td>
+        </tr>
+        <tr>
+            <td class="q">Afternoon (Non-Veg)</td>
+            <td>{{ Diet_Afternoon_NonVeg }}</td>
+        </tr>
+        <tr>
+            <td class="q">Night (veg)</td>
+            <td>{{ Diet_Night_Veg }}</td>
+        </tr>
+        <tr>
+            <td class="q">Night (Non-Veg)</td>
+            <td>{{ Diet_Night_NonVeg }}</td>
+        </tr>
+    </table>
+    <div class="contact-details">
+        <h3>CONTACT DETAILS</h3>
+        <p><b><u>Email</u>:</b> info@example.com</p>
+        <p><b><u>Phone</u>:</b> +1 123-456-7890</p>
+        <p><b><u>Address</u>:</b> 123 Nutrition Street, Cityville</p><br>
+    </div>
+    <footer>
+        &copy; 2024 Result Page. All rights reserved.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
